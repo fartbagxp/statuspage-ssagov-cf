@@ -1,0 +1,30 @@
+settings:
+  title: 'Status Page'
+  url: 'https://ssagov-cf-statuspage.vagov-cf-statuspage.workers.dev/' # used for Slack messages
+  logo: logo-192x192.png # image in ./public/ folder
+  daysInHistogram: 90 # number of days you want to display in histogram
+  collectResponseTimes: true # collects avg response times from CRON locations
+
+  allmonitorsOperational: 'All Systems Operational'
+  notAllmonitorsOperational: 'Not All Systems Operational'
+  monitorLabelOperational: 'Operational'
+  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelNoData: 'No data'
+  dayInHistogramNoData: 'No data'
+  dayInHistogramOperational: 'All good'
+  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+
+monitors:
+  - id: ssagov-ssa-gov
+    name: ssa.gov
+    url: 'https://www.ssa.gov'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+
+  - id: faq-ssa-gov
+    name: faq.ssa.gov
+    url: 'https://faq.ssa.gov'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
