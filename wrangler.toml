@@ -4,7 +4,7 @@ account_id = "41c979ec0c01c61c270c515c9b08fc59"
 workers_dev = true
 webpack_config = "node_modules/flareact/webpack"
 
-kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "d8ba8b18a08a4e15b01b778285624dfb" }]
+kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "0fe2497d5e224f38855e74222fef0688" }]
 
 [triggers]
 crons = ["*/3 * * * *"]
@@ -12,6 +12,3 @@ crons = ["*/3 * * * *"]
 [site]
 bucket = "out"
 entry-point = "./"
-
-[env.production]
-kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "d8ba8b18a08a4e15b01b778285624dfb" }]
