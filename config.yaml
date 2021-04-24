@@ -15,9 +15,9 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: ssagov-ssa-gov
-    name: ssa.gov
-    url: 'https://www.ssa.gov'
+  - id: vagov-va-gov
+    name: va.gov
+    url: 'https://www.va.gov'
     method: GET
     expectStatus: 200
     followRedirect: false
