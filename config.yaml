@@ -15,10 +15,9 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+  - id: ssagov-ssa-gov
+    name: ssa.gov
+    url: 'https://www.ssa.gov'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
