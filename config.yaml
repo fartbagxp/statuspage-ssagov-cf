@@ -1,6 +1,6 @@
 settings:
-  title: 'Status Page'
-  url: 'https://ssagov-cf-statuspage.vagov-cf-statuspage.workers.dev/' # used for Slack messages
+  title: 'SSA.gov Status Page'
+  url: 'https://ssagov.statuspage.workers.dev/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -21,31 +21,3 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-
-  - id: ssagov-ssa-gov-locator
-    name: ssa.gov locator
-    url: 'https://www.ssa.gov/locator/'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-
-  - id: faq-ssa-gov
-    name: faq.ssa.gov
-    url: 'https://faq.ssa.gov'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-
-  - id: secure-ssa-gov
-    name: secure.ssa.gov
-    url: 'https://secure.ssa.gov'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-
-  - id: blog-ssa-gov
-    name: blog.ssa.gov/
-    url: 'https://blog.ssa.gov/'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
