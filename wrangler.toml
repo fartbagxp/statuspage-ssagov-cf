@@ -1,10 +1,10 @@
-name = "testtrial"
+name = "ssagov"
 type = "webpack"
 account_id = "41c979ec0c01c61c270c515c9b08fc59"
 workers_dev = true
 webpack_config = "node_modules/flareact/webpack"
 
-kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "58c69cf1be2b46f2a3724e35dc845148" }]
+kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "0fe2497d5e224f38855e74222fef0688" }]
 
 [triggers]
 crons = ["*/3 * * * *"]
