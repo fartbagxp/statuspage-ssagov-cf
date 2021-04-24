@@ -2,11 +2,9 @@ name = "ssagov"
 type = "webpack"
 account_id = "41c979ec0c01c61c270c515c9b08fc59"
 workers_dev = true
-route = ""
-zone_id = ""
 webpack_config = "node_modules/flareact/webpack"
 
-kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "2af868d725084052998e9e6930998743" }]
+kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "d8ba8b18a08a4e15b01b778285624dfb" }]
 
 [triggers]
 crons = ["*/3 * * * *"]
@@ -16,4 +14,4 @@ bucket = "out"
 entry-point = "./"
 
 [env.production]
-kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "2af868d725084052998e9e6930998743" }]
+kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "d8ba8b18a08a4e15b01b778285624dfb" }]
