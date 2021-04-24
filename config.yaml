@@ -34,7 +34,7 @@ monitors:
     url: 'https://faq.ssa.gov'
     method: GET
     expectStatus: 200
-    followRedirect: false
+    followRedirect: true
 
   - id: secure-ssa-gov
     name: secure.ssa.gov
