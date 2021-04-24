@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - fix-cron
+      - main
   schedule:
     - cron: '0 0 1 * *'
 
