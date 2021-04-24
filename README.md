@@ -1,15 +1,13 @@
-# Flareact Template
+# Overview
 
-Get started with Flareact by installing [Wrangler](https://github.com/cloudflare/wrangler) and running:
+This is inspired by [eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page/blob/main/wrangler.toml).
 
-```bash
-wrangler generate my-project https://github.com/flareact/flareact-template
-```
+The goal is to setup a bunch of statuspages to monitor public facing va.gov websites.
 
-Next, fill in `account_id` and `name` inside your `wrangler.toml` file.
+## Setup
 
-Finally, run `yarn dev` to see magic happen 🎉
+- Install [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler/install-update).
 
-Go edit a page in your `/pages` directory to get started 👍
+## Deployment
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button?paid=true)](https://deploy.workers.cloudflare.com/?url=https://github.com/flareact/flareact-template&paid=true)
+- [ssa.gov monitor](https://ssagov.statuspage.workers.dev)
