@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - fixing-faq-monitor
+      - main
 
 jobs:
   deploy:
