@@ -22,7 +22,7 @@
   "author": "Boris Ning",
   "license": "MIT",
   "dependencies": {
-    "flareact": "1.2.0",
+    "flareact": "1.1.0",
     "laco": "1.2.1",
     "laco-react": "1.1.0",
     "react": "17.0.2",
